@@ -1,11 +1,11 @@
-#**Procurement Module**
+# **Procurement Module**
 A comprehensive procurement management system designed to streamline equipment requisition, vendor quote collection, approval workflows, and purchase order management. The platform enables organizations to manage the complete procurement lifecycle with role-based access control, multi-factor authentication, and real-time notifications.
 
-##**Overview**
+## **Overview**
 The procurement module facilitates a complete end-to-end procurement workflow that connects requesters, supervisors, vendors, and finance teams. The system maintains transparency through automated notifications, digital signatures, and comprehensive tracking of all transactions.
 
-##**Key Features**
-###**User Management & Authentication**
+## **Key Features**
+### **User Management & Authentication**
 
 Multi-factor authentication (OTP-based)
 
@@ -15,7 +15,7 @@ Supervisor and requestor hierarchies
 
 Digital signature support for approvals
 
-###**Procurement Workflow**
+### **Procurement Workflow**
 
 Equipment request submission with justification
 
@@ -29,7 +29,7 @@ Real-time order status tracking
 
 Invoice management and documentation
 
-###**Vendor Management**
+### **Vendor Management**
 
 Vendor onboarding and profile management
 
@@ -51,7 +51,7 @@ Approval thresholds (e.g., amounts exceeding ₹20k require director approval)
 
 Transaction history and audit trail
 
-###**Dashboard & Reporting**
+### **Dashboard & Reporting**
 
 Equipment search functionality
 
@@ -61,7 +61,7 @@ Summary reports and analytics
 
 Inventory integration (post-implementation)
 
-##**Technology Stack**
+## **Technology Stack**
 | Component     | Technology           |
 | ------------- | -------------------- |
 | Backend	    | Python               |
@@ -71,9 +71,9 @@ Inventory integration (post-implementation)
 |Authentication |	OTP-based MFA      |
 |Notifications	| Email, SMS, WhatsApp |
 
-##**Architecture**
+## **Architecture**
 
-###**Directory Structure**
+### **Directory Structure**
 text
 procurement/
 ├── procurement_main.py      # Entry point - orchestrates API calls
@@ -82,7 +82,7 @@ procurement/
 ├── utility.py               # Notification handlers (Email, SMS, WhatsApp)
 └── templates/               # HTML/CSS frontend files
 
-###**Code Organization**
+### **Code Organization**
 
 **1. procurement_main.py**
 
@@ -125,7 +125,7 @@ SMS notification service
 
 WhatsApp notification service
 
-##**API Endpoints**
+## **API Endpoints**
 The Flask backend exposes RESTful API endpoints following the pattern:
 
 text
@@ -143,7 +143,7 @@ result = my_login.check_username()
 # Response
 return {'status': True/False}
 
-##**Procurement Workflow Steps**
+## **Procurement Workflow Steps**
 
 1.Request Creation - User submits equipment request with business justification
 
@@ -167,7 +167,7 @@ return {'status': True/False}
 
 11. Dashboard Management - Complete visibility through search, status checks, and reporting
 
-##**Core Modules**
+## **Core Modules**
 - Authentication Module - Multi-factor OTP-based login
 
 - Budget Management - Track and enforce budget allocations
@@ -184,7 +184,7 @@ return {'status': True/False}
 
 - Dashboard - Analytics and reporting interface
 
-##**Database Schema**
+## **Database Schema**
 The system maintains the following data entities:
 
 - Users - Requestors, supervisors, and their access permissions
@@ -199,7 +199,7 @@ The system maintains the following data entities:
 
 - Approval Settings - Rules for approval routing (e.g., amount thresholds)
 
-##**Best Practices**
+## **Best Practices**
 - Object-Oriented Design - All code follows OOPS principles
 
 - Comprehensive Logging - Detailed logging for debugging and audit trails
@@ -212,7 +212,7 @@ The system maintains the following data entities:
 
 - Quality First - Quality-focused development without rigid time constraints
 
-##**Setup & Configuration**
+## **Setup & Configuration**
 
 **Initial Setup Steps**
 
@@ -228,7 +228,7 @@ The system maintains the following data entities:
 
 6. Authentication - Setup OTP service and MFA system
 
-##**Configuration File Example**
+## **Configuration File Example**
 python
 # config.py
 USERNAME = "your_username"
@@ -237,7 +237,7 @@ MONGODB_URI = "mongodb://connection_string"
 FLASK_API_BASE = "https://yourdomain.com/api"
 PAYMENT_GATEWAY_KEY = "your_key"
 
-##**Business Rules & Constraints**
+## **Business Rules & Constraints**
 - SLA Compliance - Service level agreements for supervisor approvals and vendor responses
 
 - Role-Based Access - Users can only access operations matching their role
@@ -248,13 +248,13 @@ PAYMENT_GATEWAY_KEY = "your_key"
 
 - Notification Requirement - All state changes trigger stakeholder notifications
 
-##**Scope**
+## **Scope**
 The system comprises over 20 web pages across the complete procurement lifecycle with extensive dashboard capabilities for search, order tracking, and reporting. The inventory module is planned for future integration.
 
-##**Contributing**
+## **Contributing**
 Follow the established best practices: maintain OOPS principles, add comprehensive logging, avoid hardcoding, and implement robust exception handling. All changes must be committed to the Git repository with clear commit messages.
 
-##**Notes**
+## **Notes**
 The procurement module is designed with quality as the primary focus, not time constraints
 
 All code follows industry best practices for security, logging, and maintainability
