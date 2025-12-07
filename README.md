@@ -74,14 +74,14 @@ Inventory integration (post-implementation)
 ## **Architecture**
 
 ### **Directory Structure**
-'''
+```
 procurement/
 ├── procurement_main.py      # Entry point - orchestrates API calls
 ├── lib.py                   # Core classes and business logic
 ├── config.py                # Static configuration (credentials, settings)
 ├── utility.py               # Notification handlers (Email, SMS, WhatsApp)
 └── templates/               # HTML/CSS frontend files
-'''
+```
 ### **Code Organization**
 
 **1. procurement_main.py**
@@ -127,9 +127,9 @@ WhatsApp notification service
 
 ## **API Endpoints**
 The Flask backend exposes RESTful API endpoints following the pattern:
-'''
+```
 MIT.com/api/endpoint_name
-'''
+```
 
 Example workflow:
 
@@ -230,14 +230,14 @@ The system maintains the following data entities:
 6. Authentication - Setup OTP service and MFA system
 
 ## **Configuration File Example**
-'''
+```
 config.py
 USERNAME = "your_username"
 PASSWORD = "your_password"
 MONGODB_URI = "mongodb://connection_string"
 FLASK_API_BASE = "https://yourdomain.com/api"
 PAYMENT_GATEWAY_KEY = "your_key"
-'''
+```
 
 ## **Business Rules & Constraints**
 - SLA Compliance - Service level agreements for supervisor approvals and vendor responses
