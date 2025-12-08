@@ -39,7 +39,7 @@ Performance tracking and rating
 
 Automated vendor notifications
 
-Financial Management
+### **Financial Management**
 
 Budget tracking and allocation
 
